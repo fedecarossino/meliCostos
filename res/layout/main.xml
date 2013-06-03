@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+   	<LinearLayout
+   	    android:id="@+id/thumbnail"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_alignParentTop="true"
+   	    android:background="@drawable/image_bg"
+   	    android:padding="3dip" >
+   	    
+   	    <EditText
+   	        android:id="@+id/editCantidad"
+   	        android:layout_width="100dp"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginLeft="4dp"
+   	        android:layout_marginTop="4dp"
+   	        android:inputType="number" 
+   	        android:digits="0123456789."
+   	        android:hint="cantidad"
+   	        android:ems="10" />
+
+   	    <EditText
+   	        android:id="@+id/editText1"
+   	        android:layout_width="100dp"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginLeft="4dp"
+   	        android:layout_marginTop="4dp"
+   	        android:layout_alignParentLeft="true"
+   	        android:inputType="numberDecimal" 
+   	        android:digits="0123456789."
+   	        android:hint="precio"
+   	        android:ems="10" />
+
+   	    <Button
+   	        android:id="@+id/button1"
+   	        android:layout_width="75dp"
+   	        android:layout_height="36dp"
+   	        android:layout_alignParentLeft="true"
+   	        android:layout_marginTop="3dp"
+   	        android:layout_marginLeft="4dp"
+   	        android:layout_weight="0.64"
+   	        android:background="@drawable/btncalcular"
+   	        android:text="Calcular" />
+
+   	</LinearLayout>
+   	
+	   <TextView
+	        android:id="@+id/errorText"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/thumbnail"
+	        android:layout_marginTop="3dip"
+	        android:layout_marginLeft="15dip"
+	        android:textColor="#000000"
+	        android:textSize="13dip" />
+   	
+	    <ListView
+	        android:id="@+id/list"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_above="@+id/thumbnail2"
+	        android:layout_below="@id/thumbnail"
+	        android:layout_marginLeft="17dp"
+	        android:layout_marginRight="17dp"
+	        android:layout_marginTop="17dp"
+	        android:layout_marginBottom="17dp"
+	        android:layout_weight="1" />
+
+       	<LinearLayout
+       	    android:id="@+id/thumbnail2"
+       	    android:layout_width="match_parent"
+       	    android:layout_height="wrap_content"
+       	    android:layout_centerHorizontal="true"
+       	    android:layout_alignParentBottom="true">
+
+       	    <com.google.ads.AdView
+       	        android:id="@+id/adView"
+       	        android:layout_width="wrap_content"
+       	        android:layout_height="wrap_content"
+       	        ads:adSize="BANNER"
+       	        ads:adUnitId="080b147998624003"
+       	        ads:loadAdOnCreate="true"
+       	        android:gravity="center_horizontal" >
+
+       	    </com.google.ads.AdView>
+       	</LinearLayout>
+	    
+</RelativeLayout>
