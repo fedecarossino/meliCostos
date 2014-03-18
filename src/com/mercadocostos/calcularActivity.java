@@ -188,32 +188,32 @@ public class calcularActivity extends Activity{
 		Float sum=(float) 0.0;
 		HashMap<String, String> map = new HashMap<String, String>();
 		map.put("title", "Oro Premium");
-		if(precioFloatPublicar <= 2999.99) {
-			map.put("PrecioPublicar", "$ 150");
-			sum +=(float) 150;
+		if(precioFloatPublicar <= 4499.99) {
+			map.put("PrecioPublicar", "$ 225");
+			sum +=(float) 225;
 			
-		}else if(precioFloatPublicar >= 3000 && precioFloatPublicar <= 12999.99){
+		}else if(precioFloatPublicar >= 4500 && precioFloatPublicar <= 15999.99){
 			Float aux = (float) (precioFloatPublicar*0.05);
 			sum += aux;
 			map.put("PrecioPublicar", "$ "+String.format("%.2f", aux)+" x unidad");
 
 		}else{
-			map.put("PrecioPublicar", "$ 650");
-			sum +=(float) 650;
+			map.put("PrecioPublicar", "$ 800");
+			sum +=(float) 800;
 		}
 		
-		if(precioFloatVender <= 49.99) {
-			map.put("PrecioVender", "$ 3,25");
-			sum +=(float) 3.25*Integer.parseInt(cantidad.getText().toString());;
+		if(precioFloatVender <= 99.99) {
+			map.put("PrecioVender", "$ 6,5");
+			sum +=(float) 6.5*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 50 && precioFloatVender <= 8461.99){
+		}else if(precioFloatVender >= 100 && precioFloatVender <= 10999.99){
 			Float aux = (float) (precioFloatVender*0.065);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=(float) aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 550");
-			sum +=(float) 550*Integer.parseInt(cantidad.getText().toString());;
+			map.put("PrecioVender", "$ 715");
+			sum +=(float) 715*Integer.parseInt(cantidad.getText().toString());;
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
@@ -229,32 +229,32 @@ public class calcularActivity extends Activity{
 		Float sum=(float) 0.0;
 		HashMap<String, String> map = new HashMap<String, String>();
 		map.put("title", "Oro");
-		if(precioFloatPublicar <= 999.99) {
-			map.put("PrecioPublicar", "$ 30");
-			sum +=(float) 30;
+		if(precioFloatPublicar <= 1499.99) {
+			map.put("PrecioPublicar", "$ 45");
+			sum +=(float) 45;
 			
-		}else if(precioFloatPublicar >= 1000 && precioFloatPublicar <= 12999.99){
+		}else if(precioFloatPublicar >= 1500 && precioFloatPublicar <= 15999.99){
 			Float aux = (float) (precioFloatPublicar*0.03);
 			sum +=aux;
 			map.put("PrecioPublicar", "$ "+String.format("%.2f", aux)+" x unidad");
 
 		}else{
-			map.put("PrecioPublicar", "$ 390");
-			sum +=(float) 390;
+			map.put("PrecioPublicar", "$ 480");
+			sum +=(float) 480;
 		}
 		
-		if(precioFloatVender <= 49.99) {
-			map.put("PrecioVender", "$ 3,25");
-			sum +=(float) 3.25*Integer.parseInt(cantidad.getText().toString());;
+		if(precioFloatVender <= 99.99) {
+			map.put("PrecioVender", "$ 6,5");
+			sum +=(float) 6.5*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 50 && precioFloatVender <= 8461.99){
+		}else if(precioFloatVender >= 100 && precioFloatVender <= 10999.99){
 			Float aux = (float) (precioFloatVender*0.065);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=(float) aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 550");
-			sum +=(float) 550*Integer.parseInt(cantidad.getText().toString());;
+			map.put("PrecioVender", "$ 715");
+			sum +=(float) 715*Integer.parseInt(cantidad.getText().toString());;
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
@@ -270,32 +270,32 @@ public class calcularActivity extends Activity{
 		Float sum=(float) 0.0;
 		HashMap<String, String> map = new HashMap<String, String>();
 		map.put("title", "Plata");
-		if(precioFloatPublicar <= 399.99) {
-			map.put("PrecioPublicar", "$ 4");
-			sum +=(float) 4;
+		if(precioFloatPublicar <= 499.99) {
+			map.put("PrecioPublicar", "$ 5");
+			sum +=(float) 5;
 			
-		}else if(precioFloatPublicar >= 400 && precioFloatPublicar <= 12999.99){
+		}else if(precioFloatPublicar >= 500 && precioFloatPublicar <= 15999.99){
 			Float aux = (float) (precioFloatPublicar*0.01);
 			sum +=aux;
 			map.put("PrecioPublicar", "$ "+String.format("%.2f", aux)+" x unidad");
 
 		}else{
-			map.put("PrecioPublicar", "$ 130");
-			sum +=(float) 130;
+			map.put("PrecioPublicar", "$ 160");
+			sum +=(float) 160;
 		}
 		
-		if(precioFloatVender <= 49.99) {
-			map.put("PrecioVender", "$ 3,25");
-			sum +=(float) 3.25*Integer.parseInt(cantidad.getText().toString());;
+		if(precioFloatVender <= 99.99) {
+			map.put("PrecioVender", "$ 6,5");
+			sum +=(float) 6.5*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 50 && precioFloatVender <= 8461.99){
+		}else if(precioFloatVender >= 100 && precioFloatVender <= 10999.99){
 			Float aux = (float) (precioFloatVender*0.065);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 550");
-			sum +=(float) 550*Integer.parseInt(cantidad.getText().toString());;
+			map.put("PrecioVender", "$ 715");
+			sum +=(float) 715*Integer.parseInt(cantidad.getText().toString());;
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
@@ -312,18 +312,18 @@ public class calcularActivity extends Activity{
 		map.put("title", "Bronce");
 		map.put("PrecioPublicar", "GRATIS");
 		
-		if(precioFloatVender <= 49.99) {
-			map.put("PrecioVender", "$ 5");
-			sum +=(float) 5*Integer.parseInt(cantidad.getText().toString());;
+		if(precioFloatVender <= 99.99) {
+			map.put("PrecioVender", "$ 10");
+			sum +=(float) 10*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 50 && precioFloatVender <= 8461.99){
+		}else if(precioFloatVender >= 100 && precioFloatVender <= 10999.99){
 			Float aux = (float) (precioFloatVender*0.10);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 850");
-			sum +=(float) 850*Integer.parseInt(cantidad.getText().toString());
+			map.put("PrecioVender", "$ 1100");
+			sum +=(float) 1100*Integer.parseInt(cantidad.getText().toString());
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
@@ -490,32 +490,32 @@ public class calcularActivity extends Activity{
 		Float sum=(float) 0.0;
 		HashMap<String, String> map = new HashMap<String, String>();
 		map.put("title", "Oro Premium");
-		if(precioFloatPublicar <= 10999.99) {
-			map.put("PrecioPublicar", "$ 550");
-			sum +=(float) 550;
+		if(precioFloatPublicar <= 8999.99) {
+			map.put("PrecioPublicar", "$ 450");
+			sum +=(float) 450;
 			
-		}else if(precioFloatPublicar >= 11000 && precioFloatPublicar <= 43999.99){
+		}else if(precioFloatPublicar >= 9000 && precioFloatPublicar <= 63999.99){
 			Float aux = (float) (precioFloatPublicar*0.05);
 			sum += aux;
 			map.put("PrecioPublicar", "$ "+String.format("%.2f", aux)+" x unidad");
 
 		}else{
-			map.put("PrecioPublicar", "$ 2200");
-			sum +=(float) 2200;
+			map.put("PrecioPublicar", "$ 3500");
+			sum +=(float) 3500;
 		}
 		
-		if(precioFloatVender <= 89.99) {
-			map.put("PrecioVender", "$ 6");
+		if(precioFloatVender <= 83.99) {
+			map.put("PrecioVender", "$ 5,50");
 			sum +=(float) 6*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 90 && precioFloatVender <= 30699.99){
+		}else if(precioFloatVender >= 84 && precioFloatVender <= 33863){
 			Float aux = (float) (precioFloatVender*0.065);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=(float) aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 2000");
-			sum +=(float) 2000*Integer.parseInt(cantidad.getText().toString());;
+			map.put("PrecioVender", "$ 2001");
+			sum +=(float) 2001*Integer.parseInt(cantidad.getText().toString());;
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
@@ -532,31 +532,31 @@ public class calcularActivity extends Activity{
 		HashMap<String, String> map = new HashMap<String, String>();
 		map.put("title", "Oro");
 		if(precioFloatPublicar <= 4799.99) {
-			map.put("PrecioPublicar", "$ 145");
-			sum +=(float) 145;
+			map.put("PrecioPublicar", "$ 168");
+			sum +=(float) 168;
 			
-		}else if(precioFloatPublicar >= 4800 && precioFloatPublicar <= 39999.99){
+		}else if(precioFloatPublicar >= 4800 && precioFloatPublicar <= 69999.99){
 			Float aux = (float) (precioFloatPublicar*0.03);
 			sum +=aux;
 			map.put("PrecioPublicar", "$ "+String.format("%.2f", aux)+" x unidad");
 
 		}else{
-			map.put("PrecioPublicar", "$ 1200");
-			sum +=(float) 1200;
+			map.put("PrecioPublicar", "$ 2450");
+			sum +=(float) 2450;
 		}
 		
-		if(precioFloatVender <= 89.99) {
+		if(precioFloatVender <= 83.99) {
 			map.put("PrecioVender", "$ 6");
 			sum +=(float) 6*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 90 && precioFloatVender <= 30699.99){
+		}else if(precioFloatVender >= 84 && precioFloatVender <= 33863){
 			Float aux = (float) (precioFloatVender*0.065);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=(float) aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 2000");
-			sum +=(float) 2000*Integer.parseInt(cantidad.getText().toString());;
+			map.put("PrecioVender", "$ 2001");
+			sum +=(float) 2001*Integer.parseInt(cantidad.getText().toString());;
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
@@ -572,32 +572,32 @@ public class calcularActivity extends Activity{
 		Float sum=(float) 0.0;
 		HashMap<String, String> map = new HashMap<String, String>();
 		map.put("title", "Plata");
-		if(precioFloatPublicar <= 699.99) {
-			map.put("PrecioPublicar", "$ 7");
-			sum +=(float) 7;
+		if(precioFloatPublicar <= 499.99) {
+			map.put("PrecioPublicar", "$ 5");
+			sum +=(float) 5;
 			
-		}else if(precioFloatPublicar >= 700 && precioFloatPublicar <= 43999.99){
+		}else if(precioFloatPublicar >= 500 && precioFloatPublicar <= 69999.99){
 			Float aux = (float) (precioFloatPublicar*0.01);
 			sum +=aux;
 			map.put("PrecioPublicar", "$ "+String.format("%.2f", aux)+" x unidad");
 
 		}else{
-			map.put("PrecioPublicar", "$ 440");
-			sum +=(float) 440;
+			map.put("PrecioPublicar", "$ 700");
+			sum +=(float) 700;
 		}
 		
-		if(precioFloatVender <= 89.99) {
+		if(precioFloatVender <= 83.99) {
 			map.put("PrecioVender", "$ 6");
 			sum +=(float) 6*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 90 && precioFloatVender <= 30699.99){
+		}else if(precioFloatVender >= 84 && precioFloatVender <= 33863){
 			Float aux = (float) (precioFloatVender*0.065);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 2000");
-			sum +=(float) 2000*Integer.parseInt(cantidad.getText().toString());;
+			map.put("PrecioVender", "$ 2001");
+			sum +=(float) 2001*Integer.parseInt(cantidad.getText().toString());;
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
@@ -614,18 +614,18 @@ public class calcularActivity extends Activity{
 		map.put("title", "Bronce");
 		map.put("PrecioPublicar", "GRATIS");
 		
-		if(precioFloatVender <= 59.99) {
-			map.put("PrecioVender", "$ 6");
-			sum +=(float) 6*Integer.parseInt(cantidad.getText().toString());;
+		if(precioFloatVender <= 83.99) {
+			map.put("PrecioVender", "$ 8,40");
+			sum +=(float) 8.40*Integer.parseInt(cantidad.getText().toString());;
 			
-		}else if(precioFloatVender >= 60 && precioFloatVender <= 19999.99){
+		}else if(precioFloatVender >= 84 && precioFloatVender <= 33863){
 			Float aux = (float) (precioFloatVender*0.10);
 			map.put("PrecioVender", "$ "+String.format("%.2f", aux));
 			sum +=aux*Integer.parseInt(cantidad.getText().toString());
 
 		}else{
-			map.put("PrecioVender", "$ 2000");
-			sum +=(float) 2000*Integer.parseInt(cantidad.getText().toString());
+			map.put("PrecioVender", "$ 3386");
+			sum +=(float) 3386*Integer.parseInt(cantidad.getText().toString());
 		}
 		
 		map.put("valorNeto", "Ganancia neta: $ "+String.format("%.2f", precioFloatVender*Integer.parseInt(cantidad.getText().toString())-sum));
